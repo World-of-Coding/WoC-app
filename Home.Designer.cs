@@ -1,7 +1,7 @@
 
 namespace woc_app
 {
-	partial class Home
+	partial class MainForm
 	{
 		/// <summary>
 		/// Designer variable used to keep track of non-visual components.
@@ -9,7 +9,7 @@ namespace woc_app
 		private System.ComponentModel.IContainer components = null;
 		
 		/// <summary>
-		/// Disposes resources used by the control.
+		/// Disposes resources used by the form.
 		/// </summary>
 		/// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
 		protected override void Dispose(bool disposing)
@@ -29,137 +29,167 @@ namespace woc_app
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
-			this.label8 = new System.Windows.Forms.Label();
-			this.label7 = new System.Windows.Forms.Label();
-			this.label6 = new System.Windows.Forms.Label();
-			this.label5 = new System.Windows.Forms.Label();
-			this.label4 = new System.Windows.Forms.Label();
-			this.label3 = new System.Windows.Forms.Label();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
-			this.label2 = new System.Windows.Forms.Label();
+			this.components = new System.ComponentModel.Container();
+			this.Space = new System.Windows.Forms.Panel();
 			this.label1 = new System.Windows.Forms.Label();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			this.progressBar1 = new System.Windows.Forms.ProgressBar();
+			this.infonav = new System.Windows.Forms.Label();
+			this.info = new woc_app.Info();
+			this.Homenav = new System.Windows.Forms.Label();
+			this.Home = new woc_app.Home();
+			this.minbut = new System.Windows.Forms.Button();
+			this.Exitbut = new System.Windows.Forms.Button();
+			this.pictureBox2 = new System.Windows.Forms.PictureBox();
+			this.timer1 = new System.Windows.Forms.Timer(this.components);
+			this.Loading = new woc_app.loading();
+			this.Space.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			this.SuspendLayout();
 			// 
-			// label8
+			// Space
 			// 
-			this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(102)))), ((int)(((byte)(190)))));
-			this.label8.Location = new System.Drawing.Point(19, 220);
-			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(431, 49);
-			this.label8.TabIndex = 16;
-			this.label8.Text = "WORLD /OF/ CODING";
-			// 
-			// label7
-			// 
-			this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(102)))), ((int)(((byte)(190)))));
-			this.label7.Location = new System.Drawing.Point(19, 171);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(431, 49);
-			this.label7.TabIndex = 15;
-			this.label7.Text = "WORLD /OF/ CODING";
-			// 
-			// label6
-			// 
-			this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(102)))), ((int)(((byte)(190)))));
-			this.label6.Location = new System.Drawing.Point(19, 122);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(431, 49);
-			this.label6.TabIndex = 13;
-			this.label6.Text = "WORLD /OF/ CODING";
-			// 
-			// label5
-			// 
-			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(102)))), ((int)(((byte)(190)))));
-			this.label5.Location = new System.Drawing.Point(19, 122);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(431, 49);
-			this.label5.TabIndex = 14;
-			this.label5.Text = "WORLD /OF/ CODING";
-			// 
-			// label4
-			// 
-			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(102)))), ((int)(((byte)(190)))));
-			this.label4.Location = new System.Drawing.Point(19, 73);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(431, 49);
-			this.label4.TabIndex = 12;
-			this.label4.Text = "WORLD /OF/ CODING";
-			// 
-			// label3
-			// 
-			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(102)))), ((int)(((byte)(190)))));
-			this.label3.Location = new System.Drawing.Point(19, 24);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(431, 49);
-			this.label3.TabIndex = 11;
-			this.label3.Text = "WORLD /OF/ CODING";
-			// 
-			// pictureBox1
-			// 
-			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-			this.pictureBox1.InitialImage = null;
-			this.pictureBox1.Location = new System.Drawing.Point(464, 12);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(392, 235);
-			this.pictureBox1.TabIndex = 10;
-			this.pictureBox1.TabStop = false;
-			// 
-			// label2
-			// 
-			this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(111)))), ((int)(((byte)(99)))));
-			this.label2.Location = new System.Drawing.Point(483, 305);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(372, 201);
-			this.label2.TabIndex = 9;
-			this.label2.Text = "Hey we are WoC the coding community of discord For newer and old coders alike!";
+			this.Space.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(18)))), ((int)(((byte)(42)))));
+			this.Space.Controls.Add(this.label1);
+			this.Space.Controls.Add(this.progressBar1);
+			this.Space.Controls.Add(this.Loading);
+			this.Space.Controls.Add(this.infonav);
+			this.Space.Controls.Add(this.info);
+			this.Space.Controls.Add(this.Homenav);
+			this.Space.Controls.Add(this.Home);
+			this.Space.Controls.Add(this.minbut);
+			this.Space.Controls.Add(this.Exitbut);
+			this.Space.Controls.Add(this.pictureBox2);
+			this.Space.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.Space.Location = new System.Drawing.Point(0, 0);
+			this.Space.Name = "Space";
+			this.Space.Size = new System.Drawing.Size(889, 539);
+			this.Space.TabIndex = 0;
 			// 
 			// label1
 			// 
-			this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(180)))), ((int)(((byte)(169)))));
-			this.label1.Location = new System.Drawing.Point(468, 247);
+			this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.label1.Location = new System.Drawing.Point(406, 184);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(400, 65);
-			this.label1.TabIndex = 8;
-			this.label1.Text = "Who are we?";
+			this.label1.Size = new System.Drawing.Size(100, 23);
+			this.label1.TabIndex = 17;
+			this.label1.Text = "Starting...";
+			// 
+			// progressBar1
+			// 
+			this.progressBar1.Location = new System.Drawing.Point(332, 226);
+			this.progressBar1.Name = "progressBar1";
+			this.progressBar1.Size = new System.Drawing.Size(247, 31);
+			this.progressBar1.TabIndex = 15;
+			// 
+			// infonav
+			// 
+			this.infonav.BackColor = System.Drawing.Color.Blue;
+			this.infonav.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.infonav.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+			this.infonav.Location = new System.Drawing.Point(105, 5);
+			this.infonav.Name = "infonav";
+			this.infonav.Size = new System.Drawing.Size(45, 26);
+			this.infonav.TabIndex = 14;
+			this.infonav.Text = "Info";
+			this.infonav.Click += new System.EventHandler(this.InfonavClick);
+			// 
+			// info
+			// 
+			this.info.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(18)))), ((int)(((byte)(42)))));
+			this.info.Location = new System.Drawing.Point(0, 32);
+			this.info.Name = "info";
+			this.info.Size = new System.Drawing.Size(889, 508);
+			this.info.TabIndex = 13;
+			// 
+			// Homenav
+			// 
+			this.Homenav.BackColor = System.Drawing.Color.Blue;
+			this.Homenav.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Homenav.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+			this.Homenav.Location = new System.Drawing.Point(35, 5);
+			this.Homenav.Name = "Homenav";
+			this.Homenav.Size = new System.Drawing.Size(64, 26);
+			this.Homenav.TabIndex = 12;
+			this.Homenav.Text = "Home";
+			this.Homenav.Click += new System.EventHandler(this.HomenavClick);
 			// 
 			// Home
 			// 
+			this.Home.AutoScroll = true;
+			this.Home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(18)))), ((int)(((byte)(42)))));
+			this.Home.Location = new System.Drawing.Point(0, 35);
+			this.Home.Name = "Home";
+			this.Home.Size = new System.Drawing.Size(889, 508);
+			this.Home.TabIndex = 11;
+			// 
+			// minbut
+			// 
+			this.minbut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+			this.minbut.Location = new System.Drawing.Point(765, 12);
+			this.minbut.Name = "minbut";
+			this.minbut.Size = new System.Drawing.Size(57, 22);
+			this.minbut.TabIndex = 10;
+			this.minbut.Text = "Minimize";
+			this.minbut.UseVisualStyleBackColor = false;
+			this.minbut.Click += new System.EventHandler(this.MinbutClick);
+			// 
+			// Exitbut
+			// 
+			this.Exitbut.BackColor = System.Drawing.Color.Red;
+			this.Exitbut.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.Exitbut.Location = new System.Drawing.Point(820, 12);
+			this.Exitbut.Name = "Exitbut";
+			this.Exitbut.Size = new System.Drawing.Size(54, 22);
+			this.Exitbut.TabIndex = 9;
+			this.Exitbut.Text = "Exit";
+			this.Exitbut.UseVisualStyleBackColor = false;
+			this.Exitbut.Click += new System.EventHandler(this.ExitbutClick);
+			// 
+			// pictureBox2
+			// 
+			this.pictureBox2.BackColor = System.Drawing.Color.Blue;
+			this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+			this.pictureBox2.Name = "pictureBox2";
+			this.pictureBox2.Size = new System.Drawing.Size(889, 34);
+			this.pictureBox2.TabIndex = 8;
+			this.pictureBox2.TabStop = false;
+			// 
+			// timer1
+			// 
+			this.timer1.Tick += new System.EventHandler(this.Timer1Tick);
+			// 
+			// Loading
+			// 
+			this.Loading.Location = new System.Drawing.Point(0, 32);
+			this.Loading.Name = "Loading";
+			this.Loading.Size = new System.Drawing.Size(889, 510);
+			this.Loading.TabIndex = 16;
+			// 
+			// MainForm
+			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.AutoScroll = true;
-			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(18)))), ((int)(((byte)(42)))));
-			this.Controls.Add(this.label8);
-			this.Controls.Add(this.label7);
-			this.Controls.Add(this.label6);
-			this.Controls.Add(this.label5);
-			this.Controls.Add(this.label4);
-			this.Controls.Add(this.label3);
-			this.Controls.Add(this.pictureBox1);
-			this.Controls.Add(this.label2);
-			this.Controls.Add(this.label1);
-			this.Name = "Home";
-			this.Size = new System.Drawing.Size(889, 508);
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			this.ClientSize = new System.Drawing.Size(889, 539);
+			this.Controls.Add(this.Space);
+			this.MaximizeBox = false;
+			this.Name = "MainForm";
+			this.Text = "World of Coding app";
+			this.Load += new System.EventHandler(this.MainFormLoad);
+			this.Space.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			this.ResumeLayout(false);
 		}
 		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.PictureBox pictureBox1;
-		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.Label label4;
-		private System.Windows.Forms.Label label5;
-		private System.Windows.Forms.Label label6;
-		private System.Windows.Forms.Label label7;
-		private System.Windows.Forms.Label label8;
+		private woc_app.loading Loading;
+		private System.Windows.Forms.Timer timer1;
+		private System.Windows.Forms.ProgressBar progressBar1;
+		private System.Windows.Forms.Label infonav;
+		private woc_app.Info info;
+		private System.Windows.Forms.Label Homenav;
+		private woc_app.Home Home;
+		private System.Windows.Forms.Button minbut;
+		private System.Windows.Forms.Button Exitbut;
+		private System.Windows.Forms.PictureBox pictureBox2;
+		private System.Windows.Forms.Panel Space;
 	}
 }
