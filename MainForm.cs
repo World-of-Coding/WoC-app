@@ -18,9 +18,7 @@ namespace woc_app
 			//
 			InitializeComponent();
 			
-			//
-			// TODO: Add constructor code after the InitializeComponent() call.
-			//
+			
 		}
 		
 		
@@ -41,5 +39,50 @@ namespace woc_app
 		{
 			WindowState = FormWindowState.Minimized;
 		}
+		
+		void MainFormLoad(object sender, EventArgs e)
+		{
+			Home.Hide();
+			info.Hide();
+			Loading.Show();
+			timer1.Enabled = true;
+			progressBar1.Show();
+			label1.Show();
+		}
+		
+		
+		
+	
+		
+		void HomenavClick(object sender, EventArgs e)
+		{
+			Home.Show();
+			info.Hide();
+		}
+		
+		void InfonavClick(object sender, EventArgs e)
+		{
+			Home.Hide();
+			info.Show();
+		}
+		
+		void Timer1Tick(object sender, EventArgs e)
+		{
+			progressBar1.Value += 2;
+			label1.Text = progressBar1.Value.ToString();
+			if(progressBar1.Value == 100)
+			{
+				timer1.Enabled = false;
+				progressBar1.Hide();
+				Loading.Hide();
+				Home.Show();
+				info.Hide();
+				label1.Hide();
+			}
+		}
 	}
 }
+/*
+ 	Home.Show();
+	info.Hide();
+ */
