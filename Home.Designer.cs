@@ -33,6 +33,7 @@ namespace woc_app
 			this.Space = new System.Windows.Forms.Panel();
 			this.label1 = new System.Windows.Forms.Label();
 			this.progressBar1 = new System.Windows.Forms.ProgressBar();
+			this.Loading = new woc_app.loading();
 			this.infonav = new System.Windows.Forms.Label();
 			this.info = new woc_app.Info();
 			this.Homenav = new System.Windows.Forms.Label();
@@ -41,7 +42,6 @@ namespace woc_app
 			this.Exitbut = new System.Windows.Forms.Button();
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
-			this.Loading = new woc_app.loading();
 			this.Space.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			this.SuspendLayout();
@@ -80,6 +80,13 @@ namespace woc_app
 			this.progressBar1.Name = "progressBar1";
 			this.progressBar1.Size = new System.Drawing.Size(247, 31);
 			this.progressBar1.TabIndex = 15;
+			// 
+			// Loading
+			// 
+			this.Loading.Location = new System.Drawing.Point(0, 32);
+			this.Loading.Name = "Loading";
+			this.Loading.Size = new System.Drawing.Size(889, 510);
+			this.Loading.TabIndex = 16;
 			// 
 			// infonav
 			// 
@@ -158,21 +165,16 @@ namespace woc_app
 			// 
 			this.timer1.Tick += new System.EventHandler(this.Timer1Tick);
 			// 
-			// Loading
-			// 
-			this.Loading.Location = new System.Drawing.Point(0, 32);
-			this.Loading.Name = "Loading";
-			this.Loading.Size = new System.Drawing.Size(889, 510);
-			this.Loading.TabIndex = 16;
-			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(889, 539);
 			this.Controls.Add(this.Space);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.MaximizeBox = false;
 			this.Name = "MainForm";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "World of Coding app";
 			this.Load += new System.EventHandler(this.MainFormLoad);
 			this.Space.ResumeLayout(false);
