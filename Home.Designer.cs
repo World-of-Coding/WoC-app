@@ -1,11 +1,4 @@
-﻿/*
- * Created by SharpDevelop.
- * User: aadi_
- * Date: 2/20/2021
- * Time: 11:57 AM
- * 
- * To change this template use Tools | Options | Coding | Edit Standard Headers.
- */
+
 namespace woc_app
 {
 	partial class Home
